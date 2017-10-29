@@ -32,7 +32,7 @@ var loadPage = () => {
                           <p>${prize.content}</p>
                         </div>
                         <div class="card-action">
-                          <button href="search.html">Busca más</button>
+                          <button onClick='cambio()'">Busca más</button>
                         </div>
                       </div>`
     $reachableContainer.append(template)
@@ -52,6 +52,14 @@ var loadPage = () => {
     minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
   });
   $('.parallax').parallax();
+}
+
+function cambio(){
+  location.href="search.html"
+}
+
+function cambio2(){
+  location.href="search.html"
 }
 
 

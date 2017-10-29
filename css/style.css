@@ -12,3 +12,47 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#logo-container img{
+  margin: 9%
+}
+#chipchip{
+  margin: 2%
+}
+
+#searchContent{
+  background-image: url('../assets/img/253.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+#autocomplete-input{
+  text-align: center;
+  color:#27c1c9;
+  height: 100px;
+  text-shadow: 4px 4px white;
+}
+#autocomplete-input::-webkit-input-placeholder {
+    color:    #27c1c9;
+    font-weight: bold;
+    text-align: center;
+}
+#autocomplete-input::-moz-placeholder {
+  color:    #27c1c9;
+  font-weight: bold;
+  text-align: center;
+}
+input[type=text]:not(.browser-default){
+  font-size: 5em;
+  color: #27c1c9;
+  font-weight: bold;
+}
+nav{
+  height: 100px !important;
+  background-color:  #27c1c9 !important
+}
+.autocomplete{
+  height: 20px;
+  display: block;
+}

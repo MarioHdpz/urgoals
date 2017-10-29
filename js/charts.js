@@ -1,14 +1,15 @@
-var rateOfInterest = 13;
+var rateOfInterest = 7.07;
 var frequency = 12;
 var tenurePeriodVal = 12; 			
-var defaultAmmount = 2334;
-var defaultYears = 5;
+var defaultAmmount = 2000;
+var defaultYears = 10.501;
 var dataSetZero = [];
 /*var defaultYears = slider.noUiSlider.on('update', function ( values, handle ) {
   defaultYears = values[0];
 });*/
 var dataSetOne = [];
 var dataSetTwo = [];
+var dataSetThree = [];
 var nextAmmount = 0;
 for (var i = 0; i < defaultYears*12; i++) {
   dataSetOne[i] = defaultAmmount;
@@ -24,16 +25,13 @@ var finalDataSetOne = [];
 var finalDataSetZero = [];
 var a = 0;
 for (var i = 0; i < dataSetTwo.length; i++) {
-  if (i%3 == 0) {
+  if (i%5 == 0) {
     finalDataSetOne[a] = dataSetOne[i];
     finalDataSetTwo[a] = dataSetTwo[i];
     finalDataSetZero[a] = dataSetZero[i];
     a++;
   }
 }
-
-console.log(finalDataSetOne);
-console.log(finalDataSetTwo);
 
 
 var elements = [
@@ -94,7 +92,7 @@ window.onload = function() {
                   yAxes: [{
                       stacked: true,
                       ticks: {
-                          max: 10000,
+                          max: 120000,
                           min: 0
                     }
                   }]

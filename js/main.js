@@ -32,7 +32,7 @@ var loadPage = () => {
                           <p>${prize.content}</p>
                         </div>
                         <div class="card-action">
-                          <button href="#">Busca más</button>
+                          <button href="search.html">Busca más</button>
                         </div>
                       </div>`
     $reachableContainer.append(template)

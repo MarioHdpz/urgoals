@@ -8,36 +8,46 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Mi perfil</a></li>
+    <nav class="indigo darken-4" role="navigation">
+      <div class="nav-wrapper container indigo darken-4"><a id="logo-container" href="#" class="brand-logo left">Logo</a>
+        <ul class="right">
+          <li><a href="#">
+            <div class="chip">
+              <img src="assets/img/aficionado.jpg" alt="Contact Person">
+               PEDRO PEREZ
+           </div>
+          </a></li>
         </ul>
 
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+       <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
       </div>
     </nav>
 
-    <ul class="container">
-      <li class="search">
-        <div class="search-wrapper card focused">
-          <input type="text" id="search" placeholder="Tú proxima META">
-          <i class="material-icons">search</i>
-        </div>
-      </li>
-    </ul>
+    <div class="container">
+      <form class="" action="views/search.html" method="post">
+        <input type="text" id="search" placeholder="Tú proxima META" />
+      </form>
+    </div>
 
-    <section id="Los mas alcanzables" class="container">
+    <section class="container">
       <div class="row">
         <h2 class="center">Los 3 más alcanzables de la semana</h2>
       </div>
-
-        
+      <div class="row">
+        <div id="reachables"></div>
       </div>
+      </div>
+    </section>
+
+    <section id="video" class="container">
+      <img src="assets/img/casoExito.jpg" alt="">
     </section>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/main.js">
+
+    </script>
   </body>
 </html>
